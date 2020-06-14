@@ -1,0 +1,26 @@
+name: TreeboTweaks
+version: ${project.version}
+main: me.robertbeckley.treebotweaks.TreeboTweaks
+api-version: 1.13
+prefix: TreeboTweaks
+authors: [RobertBeckley]
+description: Random Treebo Addons
+website: treebo.games
+commands:
+  nameit:
+    description: 'Sets display name of item in main hand (Accepts colour codes with &) '
+    usage: <command> <new name>
+    permission: treebotweaks.nameit
+  treebotweaksreload:
+    description: 'Allows a player to reload the config'
+    usage: <command>
+    permission: treebotweaks.admin
+  treebotweaksversion:
+    description: 'Allows a player to Check the plugin version'
+    usage: <command>
+    permission: treebotweaks.admin
+permissions:
+  treebotweaks.nameit:
+    default: op
+  treebotweaks.admin:
+    default: op
